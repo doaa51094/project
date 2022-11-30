@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --bg-color: #272b30;
+  --font-nav:@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Montserrat&family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@700&family=Xanh+Mono:ital@1&display=swap');
+  --font-family:@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+  --bg-item:#32383e;
+  --btn-color:#3a3f44;
+  --secondary-color:#4799eb;
+  --font-color:rgb(170,170,170);
+}
+body{
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  color: white;
+}
+p,h1,h2,h3,h4,h5{
+  color: var(--font-color);
+}
+.navbar-brand{
+  font-family: 'Xanh Mono';
+  font-style: italic;
+  font-display: swap;
+}
+.navbar-brand img{
+  width: 70px;
+  filter: drop-shadow( 0 0 8px var(--secondary-color));
+  
+}
+.loginbg{
+ background-color: var(--bg-item);
+}
+.loginItem img{
+  height: 72px;
+  filter: drop-shadow(0 0 8px var(--secondary-color));
+ 
+}
+.brdr{
+  height: 1px;
+  background-color:#60656a;
+}
+.loginItem button{
+  background-color: var(--btn-color);
+  border: 1px solid #22241d;
+  color: white;
+}
+.loginItem button:hover{
+  border: 1px solid #22241d;
+  background-color: var(--btn-color);
+}
+a{
+  text-decoration: none;
+}
+.loginItem a{
+  color: var(--secondary-color);
+}
+.form-control{
+  background-color:#1c1e22 ;
+  border: 0 solid rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white !important;
+}
+.form-control:focus-visible{
+  background-color:#1c1e22 ;
+}
+.toggleLink{
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+}
+.toggleLink:hover{
+  color: var(--secondary-color);
+}
+.cursolPointer{
+  cursor: pointer;
+}
+#home{
+  background-image: url(images/paladins.b44d33d6e7ee1ba8.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #1c1e22;
+}
+#home span{
+color: var(--secondary-color);
+}
+.homeItem {
+  background-color: var(--bg-item);
+}
+.scaleItem{
+  transition: all 0.4s ease-in-out;
+}
+.scaleItem:hover{ 
+  transform: scale(1.05);
+}
+.secondColor{
+  background-color: var(--secondary-color);
+}
+.LightColor{
+  background-color: #60656a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
