@@ -28,7 +28,7 @@ export default function Register() {
   }
   
 async function sendRegisterDataTOApi(){
-  let {data}=await axios.post(`https://routeegypt.herokuapp.com/signup` ,user);
+  let {data}=await axios.post(`https://route-egypt-api.herokuapp.com/signup` ,user);
   // console.log(data);
   if(data.message=='success'){
     setLoding(true);
