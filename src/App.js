@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { createBrowserRouter ,RouterProvider} from 'react-router-dom';
+import { createHashRouter,RouterProvider} from 'react-router-dom';
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
 import All from './Components/All/All'
@@ -34,7 +34,7 @@ function App() {
   setUserData(decodedToken);
    }
 
-  let routers=createBrowserRouter([
+  let routers=createHashRouter([
     {path:'/' ,element:<Layout userData={userData} setUserData={setUserData}/> ,children:[  
       {path:'home' , element:<ProtectedRoute setUserData={setUserData}><Home/></ProtectedRoute>},
       {path:'all' , element:<ProtectedRoute setUserData={setUserData}><All/></ProtectedRoute>},
