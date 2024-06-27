@@ -38,7 +38,7 @@ export default function Navbar({userData,logOut}) {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <div>
-        {userData? <ul className="navbar-nav">
+        { <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="home">Home</Link>
         </li>
@@ -71,7 +71,7 @@ export default function Navbar({userData,logOut}) {
           </ul>
         </li>
        
-      </ul>:''}
+      </ul>}
      
       </div>
       <div className='d-flex ms-auto '>

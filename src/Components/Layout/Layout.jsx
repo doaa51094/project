@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet ,useNavigate} from 'react-router-dom'
+import { Link, Outlet ,useNavigate} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 
 export default function Layout({userData,setUserData}) {
@@ -14,7 +14,7 @@ export default function Layout({userData,setUserData}) {
     <>
     
     <Navbar userData={userData} logOut={logOut}/>
-    <Outlet></Outlet>
+      <Outlet />
     
     
     </>
